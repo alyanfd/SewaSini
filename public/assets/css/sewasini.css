@@ -1,0 +1,1172 @@
+
+/* =================================
+   WARNA UTAMA SEWASINI
+================================= */
+:root {
+    --mint: #8FB99A;
+    --chocolate: #75452F;
+    --white: #FFFFFF;
+}
+
+/* =================================
+   PENGATURAN DASAR
+================================= */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--white);
+}
+
+/* =================================
+   NAVBAR
+================================= */
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: var(--mint) !important;
+}
+
+.navbar .nav-link:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar-toggler span {
+    color: var(--mint) !important;
+}
+
+/* =================================
+   TOMBOL SEWASINI
+================================= */
+.btn-sewasini {
+    background-color: var(--chocolate);
+    color: var(--white);
+}
+
+.btn-sewasini:hover {
+    background-color: var(--mint);
+    color: var(--white);
+}
+
+/* =================================
+   HERO SECTION SEWASINI
+================================= */
+
+.sewasini-hero {
+    background-color: #FFFFFF;
+    padding: 160px 0 70px;
+}
+
+.hero-content {
+    padding: 20px 0;
+}
+
+.hero-label {
+    display: inline-block;
+    background-color: #EAF3ED;
+    color: #75452F;
+    padding: 10px 18px;
+    border-radius: 30px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 {
+    color: #75452F;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 span {
+    color: #8FB99A;
+}
+
+.hero-content p {
+    color: #777777;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.btn-sewasini {
+    background-color: #75452F;
+    color: #FFFFFF;
+    padding: 13px 25px;
+    border-radius: 30px;
+    font-weight: 500;
+    border: none;
+}
+
+.btn-sewasini:hover {
+    background-color: #8FB99A;
+    color: #FFFFFF;
+}
+
+/* Ilustrasi Hero */
+
+.hero-illustration {
+    min-height: 350px;
+    background-color: #EAF3ED;
+    border-radius: 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero-house-icon {
+    width: 190px;
+    height: 190px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-house-icon i {
+    font-size: 100px;
+    color: #8FB99A;
+}
+
+.hero-decoration {
+    position: absolute;
+    border-radius: 50%;
+    background-color: #D2E5D8;
+}
+
+.decoration-one {
+    width: 130px;
+    height: 130px;
+    top: -35px;
+    right: -25px;
+}
+
+.decoration-two {
+    width: 100px;
+    height: 100px;
+    bottom: -25px;
+    left: -20px;
+}
+
+.hero-info-card {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    right: 25px;
+    background-color: #FFFFFF;
+    padding: 15px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    z-index: 3;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+}
+
+.hero-info-card i {
+    color: #8FB99A;
+    font-size: 25px;
+}
+
+.hero-info-card strong {
+    display: block;
+    color: #75452F;
+    font-size: 14px;
+}
+
+.hero-info-card small {
+    color: #888888;
+}
+
+/* Pencarian Kos */
+
+.hero-search {
+    background-color: #FFFFFF;
+    padding: 30px;
+    margin-top: 55px;
+    border-radius: 20px;
+    box-shadow: 0 5px 30px rgba(0,0,0,0.07);
+    border: 1px solid #EAF3ED;
+}
+
+.search-heading h4 {
+    color: #75452F;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.search-heading p {
+    color: #888888;
+    margin-bottom: 22px;
+}
+
+.hero-search .form-label {
+    color: #75452F;
+    font-weight: 500;
+}
+
+.search-input {
+    position: relative;
+}
+
+.search-input i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #8FB99A;
+}
+
+.search-input .form-control {
+    padding-left: 42px;
+}
+
+.hero-search .form-control,
+.hero-search .form-select {
+    min-height: 48px;
+    border: 1px solid #DCE8DF;
+    border-radius: 10px;
+}
+
+.hero-search .form-control:focus,
+.hero-search .form-select:focus {
+    border-color: #8FB99A;
+    box-shadow: 0 0 0 3px rgba(143,185,154,0.15);
+}
+
+/* =================================
+   KEUNGGULAN SEWASINI
+================================= */
+
+.benefit-card {
+    background-color: #F5F8F5;
+    padding: 30px 20px;
+    border-radius: 15px;
+    height: 100%;
+    transition: 0.3s;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.benefit-icon {
+    width: 90px;
+    height: 90px;
+    background-color: #DCEBE0;
+    color: #75452F;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 25px;
+}
+
+.benefit-icon i {
+    font-size: 35px;
+    color: #75452F;
+}
+
+.benefit-card h5 {
+    color: #75452F;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.benefit-card p {
+    color: #777777;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+/* =================================
+   REKOMENDASI KOS
+================================= */
+
+.kos-section {
+    background-color: #FFFFFF;
+}
+
+.kos-heading .kos-label {
+    display: inline-block;
+    color: #8FB99A;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.kos-heading h2 {
+    color: #75452F;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.kos-heading p {
+    color: #888888;
+    font-size: 15px;
+}
+
+/* Card Kos */
+
+.kos-card {
+    background-color: #FFFFFF;
+    border: 1px solid #E8EEE9;
+    border-radius: 15px;
+    overflow: hidden;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.kos-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(117, 69, 47, 0.13);
+}
+
+/* Foto Kos */
+
+.kos-image {
+    height: 190px;
+    position: relative;
+    overflow: hidden;
+    background-color: #EAF3ED;
+}
+
+.kos-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.kos-card:hover .kos-image img {
+    transform: scale(1.06);
+}
+
+.kos-category {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background-color: #8FB99A;
+    color: #FFFFFF;
+    padding: 6px 13px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+/* Isi Card */
+
+.kos-card-body {
+    padding: 20px;
+}
+
+.kos-rating {
+    color: #E5A93D;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.kos-rating span {
+    color: #777777;
+    margin-left: 4px;
+}
+
+.kos-card-body h5 {
+    color: #75452F;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.kos-location {
+    color: #888888;
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+.kos-location i {
+    color: #8FB99A;
+    margin-right: 5px;
+}
+
+.kos-description {
+    color: #777777;
+    font-size: 13px;
+    line-height: 1.6;
+    min-height: 62px;
+    margin-bottom: 18px;
+}
+
+/* Harga dan Tombol */
+
+.kos-card-footer {
+    border-top: 1px solid #EEEEEE;
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+
+.kos-price strong {
+    display: block;
+    color: #75452F;
+    font-size: 16px;
+}
+
+.kos-price small {
+    color: #999999;
+    font-size: 12px;
+}
+
+.btn-detail {
+    background-color: #EAF3ED;
+    color: #75452F;
+    border-radius: 20px;
+    padding: 8px 13px;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-detail:hover {
+    background-color: #8FB99A;
+    color: #FFFFFF;
+}
+
+/* Tombol Lihat Lebih Banyak */
+
+.btn-more-kos {
+    display: inline-block;
+    background-color: #75452F;
+    color: #FFFFFF;
+    padding: 13px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-more-kos:hover {
+    background-color: #8FB99A;
+    color: #FFFFFF;
+}
+
+/* Tentang Kami */
+.sewasini-subtitle {
+    color: #8FB99A;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.about-illustration {
+    min-height: 350px;
+    background: #EAF3EC;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.about-illustration > i {
+    font-size: 150px;
+    color: #75452F;
+}
+
+.about-decoration {
+    position: absolute;
+    bottom: 45px;
+    right: 55px;
+    width: 75px;
+    height: 75px;
+    background: #8FB99A;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+}
+
+.about-point {
+    color: #75452F;
+    font-weight: 500;
+}
+
+.about-point i {
+    color: #8FB99A;
+    margin-right: 8px;
+}
+
+.btn-sewasini {
+    background: #75452F;
+    color: white;
+    border-radius: 25px;
+    padding: 12px 28px;
+}
+
+.btn-sewasini:hover {
+    background: #8FB99A;
+    color: white;
+}
+
+/* Ulasan Penghuni */
+.review-card {
+    background: #F5F8F5;
+    padding: 30px;
+    border-radius: 15px;
+    height: 100%;
+    transition: 0.3s;
+}
+
+.review-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.10);
+}
+
+.review-stars {
+    color: #D6A84F;
+    font-size: 22px;
+    margin-bottom: 18px;
+}
+
+.review-card p {
+    color: #666;
+    line-height: 1.8;
+    min-height: 110px;
+}
+
+.review-card h5 {
+    color: #75452F;
+    margin-bottom: 5px;
+}
+
+.review-card span {
+    color: #8FB99A;
+    font-size: 14px;
+}
+
+/* Footer SewaSini */
+.sewasini-footer {
+    background: #75452F;
+    color: #F5F5F5;
+}
+
+.footer-logo {
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+.footer-logo i {
+    color: #A9CFB1;
+}
+
+.sewasini-footer h5 {
+    color: #A9CFB1;
+    margin-bottom: 20px;
+}
+
+.sewasini-footer p {
+    color: #E8E8E8;
+    line-height: 1.8;
+}
+
+.footer-link {
+    display: block;
+    color: #E8E8E8;
+    text-decoration: none;
+    margin-bottom: 12px;
+    transition: 0.3s;
+}
+
+.footer-link:hover {
+    color: #A9CFB1;
+    padding-left: 5px;
+}
+
+.sewasini-copyright {
+    background: #593321;
+    color: #FFFFFF;
+}
+
+/* Tombol Kembali ke Atas */
+.back-to-top {
+    background: #75452F !important;
+    border-color: #75452F !important;
+    color: #FFFFFF !important;
+}
+
+.back-to-top:hover {
+    background: #8FB99A !important;
+    border-color: #8FB99A !important;
+}
+
+/* Halaman Daftar Akun */
+.register-page {
+    min-height: 100vh;
+    background: #F7F9F7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.register-container {
+    width: 100%;
+    max-width: 1050px;
+    min-height: 650px;
+    background: #FFFFFF;
+    display: flex;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Bagian Kiri */
+.register-welcome {
+    width: 42%;
+    background: #EAF3EC;
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.register-logo {
+    color: #75452F;
+    font-size: 28px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.register-logo i {
+    color: #8FB99A;
+}
+
+.welcome-content {
+    margin-bottom: 50px;
+}
+
+.welcome-icon {
+    width: 110px;
+    height: 110px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #75452F;
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+
+.welcome-content h1 {
+    color: #75452F;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.welcome-content p {
+    color: #666666;
+    line-height: 1.8;
+    margin-top: 15px;
+}
+
+/* Bagian Form */
+
+.register-page {
+    display: flex;
+    align-items: stretch;   /* kolom kiri & kanan setinggi halaman */
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #FFFFFF;
+}
+
+.register-left {
+    width: 42%;
+    min-height: 100vh;      /* jaga-jaga supaya hijau selalu full */
+    background: #EAF3EC;
+    padding: 45px 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.register-brand {
+    color: #75452F;
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.register-brand i {
+    margin-right: 8px;
+}
+
+.register-left-content {
+    max-width: 430px;
+}
+
+.register-left-content h1 {
+    color: #75452F;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.register-left-content p {
+    color: #6B625D;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-top: 18px;
+}
+
+.register-big-icon {
+    color: #8FB99A;
+    font-size: 100px;
+    margin-top: 30px;
+}
+
+.register-left-footer {
+    color: #806F65;
+    font-size: 13px;
+}
+
+/* Bagian kanan */
+
+.register-right {
+    width: 58%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 45px 60px;
+}
+
+.register-form-wrapper {
+    width: 100%;
+    max-width: 480px;
+}
+
+.register-form-wrapper h2 {
+    color: #75452F;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.register-description {
+    color: #777777;
+    margin-bottom: 25px;
+}
+
+.register-form-wrapper label {
+    color: #51443D;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+/* Pilihan jenis akun */
+
+.account-type {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.account-option {
+    flex: 1;
+    cursor: pointer;
+    margin: 0;
+}
+
+.account-option input {
+    display: none;
+}
+
+.account-option span {
+    display: block;
+    padding: 14px 10px;
+    border: 1px solid #D9E4DA;
+    border-radius: 8px;
+    color: #75452F;
+    text-align: center;
+    font-size: 13px;
+}
+
+.account-option span i {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.account-option input:checked + span {
+    background: #EAF3EC;
+    border: 2px solid #8FB99A;
+}
+
+/* Input */
+
+.register-field {
+    margin-bottom: 16px;
+}
+
+.register-field input {
+    width: 100%;
+    height: 46px;
+    border: 1px solid #D9D9D9;
+    border-radius: 6px;
+    padding: 0 14px;
+    outline: none;
+    font-size: 14px;
+}
+
+.register-field input:focus {
+    border-color: #8FB99A;
+}
+
+/* Tombol daftar */
+
+.register-submit {
+    width: 100%;
+    height: 48px;
+    background: #75452F;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+.register-submit:hover {
+    background: #8FB99A;
+}
+
+/* Link */
+
+.register-login-text {
+    text-align: center;
+    margin-top: 22px;
+    font-size: 14px;
+    color: #777777;
+}
+
+.register-login-text a,
+.register-back {
+    color: #75452F;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.register-back {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+/* Tampilan layar kecil */
+
+@media (max-width: 768px) {
+    .register-page {
+        flex-direction: column;
+    }
+
+    .register-left,
+    .register-right {
+        width: 100%;
+    }
+
+    .register-left {
+        padding: 30px;
+    }
+
+    .register-left-content h1 {
+        font-size: 27px;
+    }
+
+    .register-big-icon {
+        display: none;
+    }
+
+    .register-left-footer {
+        margin-top: 25px;
+    }
+
+    .register-right {
+        padding: 35px 25px;
+    }
+}
+
+/* =================================
+   HALAMAN LOGIN SEWASINI
+================================= */
+
+.login-page {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    background: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* BAGIAN KIRI */
+
+.login-left {
+    width: 42%;
+    min-height: 100vh;
+    background: #EAF3EC;
+    padding: 45px 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.login-brand {
+    color: #75452F;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.login-brand i {
+    color: #8FB99A;
+    margin-right: 8px;
+}
+
+.login-left-content {
+    max-width: 450px;
+}
+
+.login-left-content h1 {
+    color: #75452F;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.login-left-content p {
+    color: #777777;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.login-big-icon {
+    color: #8FB99A;
+    font-size: 110px;
+    margin-top: 35px;
+}
+
+.login-left-footer {
+    color: #806F65;
+    font-size: 13px;
+}
+
+/* BAGIAN KANAN */
+
+.login-right {
+    width: 58%;
+    min-height: 100vh;
+    padding: 45px 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+}
+
+.login-form-wrapper {
+    width: 100%;
+    max-width: 450px;
+}
+
+.login-form-wrapper h2 {
+    color: #75452F;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.login-description {
+    color: #888888;
+    font-size: 14px;
+    margin-bottom: 35px;
+}
+
+/* INPUT LOGIN */
+
+.login-field {
+    margin-bottom: 22px;
+}
+
+.login-field label {
+    display: block;
+    color: #75452F;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 9px;
+}
+
+.login-input {
+    position: relative;
+}
+
+.login-input i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #8FB99A;
+}
+
+.login-input input {
+    width: 100%;
+    height: 50px;
+    padding: 10px 15px 10px 43px;
+    border: 1px solid #DDE5DE;
+    border-radius: 7px;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.login-input input:focus {
+    border-color: #8FB99A;
+    box-shadow: 0 0 0 3px rgba(143, 185, 154, 0.15);
+}
+
+.login-input input::placeholder {
+    color: #AAAAAA;
+}
+
+/* INGAT SAYA DAN LUPA PASSWORD */
+
+.login-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    font-size: 13px;
+}
+
+.login-options label {
+    color: #777777;
+    cursor: pointer;
+}
+
+.login-options input {
+    accent-color: #75452F;
+    margin-right: 5px;
+}
+
+.login-options a {
+    color: #75452F;
+    text-decoration: none;
+}
+
+.login-options a:hover {
+    color: #8FB99A;
+}
+
+/* TOMBOL LOGIN */
+
+.login-submit {
+    width: 100%;
+    height: 49px;
+    background: #75452F;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.login-submit:hover {
+    background: #8FB99A;
+}
+
+/* LINK DAFTAR */
+
+.login-register-text {
+    text-align: center;
+    color: #888888;
+    font-size: 14px;
+    margin-top: 25px;
+}
+
+.login-register-text a {
+    color: #75452F;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.login-register-text a:hover {
+    color: #8FB99A;
+}
+
+/* KEMBALI KE BERANDA */
+
+.login-back {
+    display: block;
+    text-align: center;
+    color: #75452F;
+    font-size: 14px;
+    text-decoration: none;
+    margin-top: 18px;
+}
+
+.login-back:hover {
+    color: #8FB99A;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .login-page {
+        flex-direction: column;
+    }
+
+    .login-left,
+    .login-right {
+        width: 100%;
+        min-height: auto;
+    }
+
+    .login-left {
+        padding: 30px;
+    }
+
+    .login-left-content {
+        margin-top: 40px;
+    }
+
+    .login-left-content h1 {
+        font-size: 28px;
+    }
+
+    .login-big-icon {
+        font-size: 70px;
+        margin-top: 20px;
+    }
+
+    .login-left-footer {
+        margin-top: 30px;
+    }
+
+    .login-right {
+        padding: 40px 25px;
+    }
+}
