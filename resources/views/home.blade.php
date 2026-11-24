@@ -83,8 +83,7 @@
                         <!-- Tombol Login dan Daftar Akun -->
                         <div class="d-flex align-items-center gap-2">
 
-                            <a href="#" class="btn rounded-pill px-4"
-                            style="border: 1px solid #75452F; color: #75452F;">
+                             <a href="/login" class="btn btn-login-home rounded-pill px-4">
                                 Login
                             </a>
 
@@ -618,58 +617,83 @@
         </div>
         <!-- Ulasan Penghuni End -->
         
+        
         <!-- Footer SewaSini Start -->
-        <div class="container-fluid sewasini-footer pt-5 mt-5" id="kontak">
-            <div class="container py-5">
-                <div class="row g-5">
+        <div class="container-fluid sewasini-footer" id="kontak">
+            <div class="container">
+                <div class="row footer-main align-items-center">
 
-                    <div class="col-lg-4 col-md-6">
-                        <h2 class="footer-logo mb-3">
+                    <!-- Logo dan Sosial Media -->
+                    <div class="col-lg-3 col-md-6 footer-brand">
+                        <h2 class="footer-logo">
                             <i class="fas fa-house-user"></i> SewaSini
                         </h2>
+
+                        <p>Cari kos, lebih mudah bersama SewaSini!</p>
+
+                        <div class="footer-social">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Navigasi -->
+                    <div class="col-lg-2 col-md-6 footer-navigation">
+                        <h6>Navigasi</h6>
+                        <a href="#">Beranda</a>
+                        <a href="#tentang">Tentang Kami</a>
+                        <a href="#daftar-kos">Daftar Kos</a>
+                        <a href="#daftar-kos">List Kos</a>
+                        <a href="#kontak">Kontak</a>
+                    </div>
+
+                    <!-- Kontak -->
+                    <div class="col-lg-3 col-md-6 footer-contact">
+                        <h6>Kontak Kami</h6>
+
                         <p>
-                            Platform pencarian kos yang membantu calon
-                            penyewa menemukan tempat tinggal sesuai
-                            kebutuhan dengan lebih mudah dan praktis.
+                            <i class="fas fa-envelope"></i>
+                            support@sewasini.id
+                        </p>
+
+                        <p>
+                            <i class="fas fa-phone"></i>
+                            +62 812 3456 7890
+                        </p>
+
+                        <p>
+                            <i class="fas fa-map-marker-alt"></i>
+                            Pekanbaru, Riau
                         </p>
                     </div>
 
-                    <div class="col-lg-2 col-md-6">
-                        <h5>Menu</h5>
-                        <a href="#" class="footer-link">Home</a>
-                        <a href="#tentang" class="footer-link">Tentang Kami</a>
-                        <a href="#daftar-kos" class="footer-link">Daftar Kos</a>
-                        <a href="#ulasan" class="footer-link">Ulasan Penghuni</a>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6">
-                        <h5>Informasi</h5>
-                        <a href="#kontak" class="footer-link">Kontak Kami</a>
-                        <a href="#" class="footer-link">Bantuan</a>
-                        <a href="#" class="footer-link">Kebijakan Privasi</a>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6">
-                        <h5>Hubungi Kami</h5>
-                        <p><i class="fas fa-map-marker-alt me-2"></i> Pekanbaru, Riau</p>
-                        <p><i class="fas fa-envelope me-2"></i> Email SewaSini</p>
-                        <p><i class="fas fa-phone me-2"></i> Informasi Kontak</p>
+                    <!-- Ilustrasi Rumah -->
+                    <div class="col-lg-4 col-md-6 footer-illustration">
+                        <div class="footer-landscape">
+                            <div class="footer-sun"></div>
+                            <div class="footer-house">
+                                <i class="fas fa-house"></i>
+                            </div>
+                            <i class="fas fa-tree footer-tree tree-one"></i>
+                            <i class="fas fa-tree footer-tree tree-two"></i>
+                            <i class="fas fa-star footer-star star-one"></i>
+                            <i class="fas fa-star footer-star star-two"></i>
+                        </div>
                     </div>
 
                 </div>
             </div>
+
+            <!-- Copyright -->
+            <div class="footer-copyright">
+                <p>© 2026 SewaSini. Semua hak dilindungi.</p>
+            </div>
         </div>
         <!-- Footer SewaSini End -->
 
-        <!-- Copyright Start -->
-        <div class="container-fluid sewasini-copyright py-3">
-            <div class="container text-center">
-                <p class="mb-0">
-                    © 2026 SewaSini. All Rights Reserved.
-                </p>
-            </div>
-        </div>
-        <!-- Copyright End -->
+
+       
 
 
         <!-- Back to Top -->

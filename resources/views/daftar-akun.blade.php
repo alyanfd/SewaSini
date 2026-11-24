@@ -48,58 +48,82 @@
                 Silakan lengkapi data berikut untuk membuat akun SewaSini.
             </p>
 
-            <form>
+            
+<form action="{{ route('register') }}" method="POST">
+    @csrf
 
-                <label>Daftar Sebagai</label>
+    <label>Daftar Sebagai</label>
 
-                <div class="account-type">
-                    <label class="account-option">
-                        <input type="radio" name="jenis_akun" value="penyewa" checked>
-                        <span>
-                            <i class="fas fa-search"></i>
-                            Penyewa / Pencari Kos
-                        </span>
-                    </label>
+    <div class="account-type">
+        <label class="account-option">
+            <input type="radio" name="jenis_akun" value="penyewa"
+                {{ old('jenis_akun', 'penyewa') == 'penyewa' ? 'checked' : '' }}>
+            <span>
+                <i class="fas fa-search"></i>
+                Penyewa / Pencari Kos
+            </span>
+        </label>
 
-                    <label class="account-option">
-                        <input type="radio" name="jenis_akun" value="pemilik">
-                        <span>
-                            <i class="fas fa-home"></i>
-                            Pemilik Kos
-                        </span>
-                    </label>
-                </div>
+        <label class="account-option">
+            <input type="radio" name="jenis_akun" value="pemilik"
+                {{ old('jenis_akun') == 'pemilik' ? 'checked' : '' }}>
+            <span>
+                <i class="fas fa-home"></i>
+                Pemilik Kos
+            </span>
+        </label>
+    </div>
 
-                <div class="register-field">
-                    <label>Nama Lengkap</label>
-                    <input type="text" placeholder="Masukkan nama lengkap">
-                </div>
+    <div class="register-field">
+        <label>Nama Lengkap</label>
+        <input type="text" name="name"
+            value="{{ old('name') }}"
+            placeholder="Masukkan nama lengkap" required>
+        @error('name')
+            <small class="text-danger">{{ $message }}</small>
+        @enderror
+    </div>
 
-                <div class="register-field">
-                    <label>Email</label>
-                    <input type="email" placeholder="Masukkan email">
-                </div>
+    <div class="register-field">
+        <label>Email</label>
+        <input type="email" name="email"
+            value="{{ old('email') }}"
+            placeholder="Masukkan email" required>
+        @error('email')
+            <small class="text-danger">{{ $message }}</small>
+        @enderror
+    </div>
 
-                <div class="register-field">
-                    <label>Nomor Telepon</label>
-                    <input type="tel" placeholder="Masukkan nomor telepon">
-                </div>
+    <div class="register-field">
+        <label>Nomor Telepon</label>
+        <input type="tel" name="phone"
+            value="{{ old('phone') }}"
+            placeholder="Masukkan nomor telepon" required>
+        @error('phone')
+            <small class="text-danger">{{ $message }}</small>
+        @enderror
+    </div>
 
-                <div class="register-field">
-                    <label>Password</label>
-                    <input type="password" placeholder="Masukkan password">
-                </div>
+    <div class="register-field">
+        <label>Password</label>
+        <input type="password" name="password"
+            placeholder="Masukkan password" required>
+        @error('password')
+            <small class="text-danger">{{ $message }}</small>
+        @enderror
+    </div>
 
-                <div class="register-field">
-                    <label>Konfirmasi Password</label>
-                    <input type="password" placeholder="Ulangi password">
-                </div>
+    <div class="register-field">
+        <label>Konfirmasi Password</label>
+        <input type="password" name="password_confirmation"
+            placeholder="Ulangi password" required>
+    </div>
 
-                <button type="submit" class="register-submit">
-                    Daftar Akun
-                </button>
+    <button type="submit" class="register-submit">
+        Daftar Akun
+    </button>
+</form>
 
-            </form>
 
             <p class="register-login-text">
                 Sudah memiliki akun?
@@ -114,6 +138,5 @@
     </div>
 
 </div>
-
 </body>
 </html>
