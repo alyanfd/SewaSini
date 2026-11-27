@@ -70,7 +70,7 @@
                                 Tentang Kami
                             </a>
 
-                            <a href="#daftar-kos" class="nav-item nav-link">
+                            <a href="{{ url('/daftar-kos') }}" class="nav-item nav-link">
                                 Daftar Kos
                             </a>
 

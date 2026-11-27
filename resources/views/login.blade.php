@@ -17,8 +17,11 @@
 
 <div class="login-page">
 
-    <!-- Bagian Kiri -->
+    <!-- BAGIAN KIRI -->
     <div class="login-left">
+
+        <div class="login-photo"></div>
+        <div class="login-overlay"></div>
 
         <div class="login-brand">
             <i class="fas fa-home"></i>
@@ -32,8 +35,6 @@
                 Masuk ke akun SewaSini untuk melanjutkan perjalananmu
                 menemukan kos nyaman atau mengelola kos milikmu.
             </p>
-
-            <i class="fas fa-house-user login-big-icon"></i>
         </div>
 
         <div class="login-left-footer">
@@ -42,7 +43,7 @@
 
     </div>
 
-    <!-- Bagian Kanan -->
+    <!-- BAGIAN KANAN -->
     <div class="login-right">
 
         <div class="login-form-wrapper">
